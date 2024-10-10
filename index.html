@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Medicamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestor de Medicamentos</h1>
+        <form id="medForm">
+            <input type="text" id="medName" placeholder="Nombre del medicamento" required>
+            <input type="number" id="medQuantity" placeholder="Cantidad" required>
+            <input type="text" id="medLocation" placeholder="Ubicación" required>
+            <button type="submit">Agregar Medicamento</button>
+        </form>
+        <h2>Lista de Medicamentos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Ubicación</th>
+                </tr>
+            </thead>
+            <tbody id="medList"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
